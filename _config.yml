@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Jiahao Meng"
   avatar           : "images/bio.jpg"
-  bio              : "Ph.D. Student in PKU."
+  bio              : # "Ph.D. Student in PKU."
   location         : "Beijing, China"
   employer         :
   pubmed           : 

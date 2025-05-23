@@ -29,7 +29,7 @@ Hi, I am **Jiahao Meng (孟嘉豪)**, a **PhD Student** at [School of Intelligen
 
 <!-- # 🎖 Honors and Awards -->
 
-# 📖 Educations_
+# 📖 Educations
 - *2024.09 - now*, PhD Student in Peking University (PKU) 
 - *2020.09 - 2024.07*, Bachelor in Peking University (PKU)
 
