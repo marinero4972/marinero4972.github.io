@@ -191,116 +191,156 @@
   </div>
 </section>
 
-<!-- 
-<section class="hero teaser">
+
+<!-- ===================== Demos ===================== -->
+<section class="section" id="demos">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-1">Demos</h2>
-        <div class="content has-text-justified">
-          
-          <div class="hero-body">
-            <p>
-              (Demo 1) Input Video (Source: La La Land, 2016):
-            </p>
-            <video poster autoplay loop muted playsinline>
-                <source src="video/exp_1.mp4" type="video/mp4">
-                Error: Your browser does not support the video tag.
-            </video>
-            
-            <p>
-              Instruction: "Please segment the girl wearing the yellow dress."
-            </p>
-          </div>
+    <h2 class="title is-3 has-text-centered">Demos</h2>
+    <p class="has-text-centered mb-5">
+      Each pair shows the <strong>input video</strong> (left) and the <strong>spatio-temporal Grounded Reasoning visualization</strong> (right).
+    </p>
 
-          <div class="hero-body">
-            <p>
-              (Demo 2) Input Video (Source: La La Land, 2016):
-            </p>
-            <video autoplay loop muted>
-                <source src="video/exp_2.mp4" type="video/mp4">
-                Error: Your browser does not support the video tag.
-            </video>
-            <p>
-              Instruction: "Please segment the main character."
-            </p>
-          </div>
-          
-          <div class="hero-body">
-            <p>
-              (Demo 3) Input Video (Source: Internet):
-            </p>
-            <video autoplay loop muted>
-                <source src="video/apt_exp_1_all.mp4" type="video/mp4">
-                Error: Your browser does not support the video tag.
-            </video>
-            <p>
-              Instruction: "Please segment the person wearing sun glasses."
-            </p>
-          </div>
+    <style>
+      .demo-box { padding: 1.25rem; border-radius: 14px; box-shadow: 0 6px 18px rgba(0,0,0,.06); background:#fff; }
+      .demo-media { aspect-ratio: 16 / 9; width: 100%; background:#0a0a0a10; border-radius: 12px; overflow: hidden; }
+      .demo-media video, .demo-media img { width: 100%; height: 100%; object-fit: contain; display: block; }
+      .demo-caption { font-size: .95rem; color: #666; margin-top: .5rem; }
+      @media (prefers-color-scheme: dark) {
+        .demo-box { background:#111; box-shadow: 0 6px 18px rgba(0,0,0,.25); }
+        .demo-caption { color:#aaa; }
+      }
+    </style>
 
-          <div class="hero-body">
-            <p>
-              (Demo 4) Input Video (Source: Internet):
-            </p>
-            <video autoplay loop muted>
-                <source src="video/apt_exp_2_all.mp4" type="video/mp4">
-                Error: Your browser does not support the video tag.
-            </video>
-            <p>
-              Instruction: "Please segment the singing girl."
-            </p>
+    <!-- ====== Demo 7 ====== -->
+    <div class="demo-box mb-6">
+      <div class="columns is-vcentered">
+        <div class="column is-6">
+          <div class="demo-media">
+            <video src="./src/s08e18_seg02_clip_03.mp4" muted autoplay loop playsinline controls></video>
           </div>
+          <div class="demo-caption has-text-centered">Input video</div>
+        </div>
+        <div class="column is-6">
+          <div class="demo-media">
+            <img src="./src/demo_vstar_s08e18_seg02_clip_03.gif" alt="Demo 7 visualization">
+          </div>
+          <div class="demo-caption has-text-centered">Spatio-temporal Grounded Reasoning (GIF)</div>
+        </div>
+      </div>
+    </div>
+    
 
-          <div class="hero-body">
-            <p>
-              (Demo 5) Input Video (Source: Internet):
-            </p>
-            <video autoplay loop muted>
-                <source src="video/baodao_exp_1_all.mp4" type="video/mp4">
-                Error: Your browser does not support the video tag.
-            </video>
-            <p>
-              Instruction: "Please segment the guy in the center."
-            </p>
+    <!-- ====== Demo 3 ====== -->
+    <div class="demo-box mb-6">
+      <div class="columns is-vcentered">
+        <div class="column is-6">
+          <div class="demo-media">
+            <video src="./src/3846475848.mp4" muted autoplay loop playsinline controls></video>
           </div>
+          <div class="demo-caption has-text-centered">Input video</div>
+        </div>
+        <div class="column is-6">
+          <div class="demo-media">
+            <img src="./src/demo_vstar_3846475848.gif" alt="Demo 3 visualization">
+          </div>
+          <div class="demo-caption has-text-centered">Spatio-temporal Grounded Reasoning (GIF)</div>
+        </div>
+      </div>
+    </div>
 
-          <div class="hero-body">
-            <p>
-              (Demo 6) Input Video (Source: The Godfather, 1972):
-            </p>
-            <video autoplay loop muted>
-                <source src="video/gf_exp1.mp4" type="video/mp4">
-                Error: Your browser does not support the video tag.
-            </video>
-            <p>
-              Instruction: "What is the atmosphere of the scene?"
-            </p>
-            <p>
-              Answer: "The scene has a dark and mysterious atmosphere, with the men dressed in suits and ties, and the dimly lit room."
+    <!-- ====== Demo 4 ====== -->
+    <div class="demo-box mb-6">
+      <div class="columns is-vcentered">
+        <div class="column is-6">
+          <div class="demo-media">
+            <video src="./src/5587257558.mp4" muted autoplay loop playsinline controls></video>
           </div>
+          <div class="demo-caption has-text-centered">Input video</div>
+        </div>
+        <div class="column is-6">
+          <div class="demo-media">
+            <img src="./src/demo_vstar_5587257558.gif" alt="Demo 4 visualization">
+          </div>
+          <div class="demo-caption has-text-centered">Spatio-temporal Grounded Reasoning (GIF)</div>
+        </div>
+      </div>
+    </div>
 
-          <div class="hero-body">
-            <p>
-              (Demo 7) Input Video (Source: Internet):
-            </p>
-            <video autoplay loop muted>
-                <source src="video/exp_baodao_1.mp4" type="video/mp4">
-                Error: Your browser does not support the video tag.
-            </video>
-            <p>
-              Instruction: "What are the guys doing in the video?"
-            </p>
-            <p>
-              Answer: "The guys in the video are dancing together in a group. They are performing a choreographed routine, moving in sync with each other."
+    <!-- ====== Demo 5 ====== -->
+    <div class="demo-box mb-6">
+      <div class="columns is-vcentered">
+        <div class="column is-6">
+          <div class="demo-media">
+            <video src="./src/5804131706.mp4" muted autoplay loop playsinline controls></video>
           </div>
-      
+          <div class="demo-caption has-text-centered">Input video</div>
+        </div>
+        <div class="column is-6">
+          <div class="demo-media">
+            <img src="./src/demo_vstar_5804131706.gif" alt="Demo 5 visualization">
+          </div>
+          <div class="demo-caption has-text-centered">Spatio-temporal Grounded Reasoning (GIF)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== Demo 6 ====== -->
+    <div class="demo-box mb-6">
+      <div class="columns is-vcentered">
+        <div class="column is-6">
+          <div class="demo-media">
+            <video src="./src/8183771503.mp4" muted autoplay loop playsinline controls></video>
+          </div>
+          <div class="demo-caption has-text-centered">Input video</div>
+        </div>
+        <div class="column is-6">
+          <div class="demo-media">
+            <img src="./src/demo_vstar_8183771503.gif" alt="Demo 6 visualization">
+          </div>
+          <div class="demo-caption has-text-centered">Spatio-temporal Grounded Reasoning (GIF)</div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- ====== Demo 1 ====== -->
+    <div class="demo-box mb-6">
+      <div class="columns is-vcentered">
+        <div class="column is-6">
+          <div class="demo-media">
+            <video src="./src/_cZXyj6rYVg.mp4" muted autoplay loop playsinline controls></video>
+          </div>
+          <div class="demo-caption has-text-centered">Input video</div>
+        </div>
+        <div class="column is-6">
+          <div class="demo-media">
+            <img src="./src/demo_mme__cZXyj6rYVg.gif" alt="Demo 1 visualization">
+          </div>
+          <div class="demo-caption has-text-centered">Spatio-temporal Grounded Reasoning (GIF)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== Demo 2 ====== -->
+    <div class="demo-box mb-6">
+      <div class="columns is-vcentered">
+        <div class="column is-6">
+          <div class="demo-media">
+            <video src="./src/tNQo2GTbP6s.mp4" muted autoplay loop playsinline controls></video>
+          </div>
+          <div class="demo-caption has-text-centered">Input video</div>
+        </div>
+        <div class="column is-6">
+          <div class="demo-media">
+            <img src="./src/demo_mme_tNQo2GTbP6s.gif" alt="Demo 2 visualization">
+          </div>
+          <div class="demo-caption has-text-centered">Spatio-temporal Grounded Reasoning (GIF)</div>
         </div>
       </div>
     </div>
   </div>
-</section> -->
-
+</section>
+<!-- =================== /Demos =================== -->
 
 
 <!-- Method. -->
