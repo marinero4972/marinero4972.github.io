@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="">
+  <meta name="keywords" content="OMG-Seg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open-o3-Video</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="../static/css/bulma.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="../static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="../static/css/index.css">
+  <link rel="icon" href="../../images/github_16x16.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="../static/js/fontawesome.all.min.js"></script>
+  <script src="../static/js/bulma-carousel.min.js"></script>
+  <script src="../static/js/bulma-slider.min.js"></script>
+  <script src="../static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://marinero4972.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Open-o3 Video: Grounded Video Reasoning with Explicit Spatio-Temporal Evidence</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://marinero4972.github.io/">Jiahao Meng</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://lxtgh.github.io/">Xiangtai Li</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://haochen-wang409.github.io">Haochen Wang</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="https://tangent0308.github.io/">Yue Tan</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://zhang-tao-whu.github.io/">Tao Zhang</a><sup>4</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=-j1j7TkAAAAJ&hl=zh-CN">Lingdong Kong</a><sup>2</sup>,</span>
+            <br>
+            <span class="author-block">
+              <a href="https://sites.google.com/view/anranwang/home">Anran Wang</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=T4gqdPkAAAAJ">Yunhai Tong</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=9wOJrf8AAAAJ&hl=zh-CN">Zhiyang Teng</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=YgL4rywAAAAJ&hl=zh-CN&oi=ao">Yujing Wang</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=en&user=RDvwXDsAAAAJ">Zhuochen Wang</a><sup>2</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Peking University</span> &nbsp;&nbsp;&nbsp;
+            <span class="author-block"><sup>2</sup>Beytedance</span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block"><sup>3</sup>CAISA</span>&nbsp;&nbsp;&nbsp;
+            <span class="author-block"><sup>4</sup>WHU</span>&nbsp;&nbsp;&nbsp;
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2510.xxxxx"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/marinero4972/Open-o3-Video"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- HuggingFace link -->
+              <span class="link-block">
+                    <a href="https://huggingface.co/marinero4972/Open-o3-Video/tree/main" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span>🤗 HuggingFace Model</span>
+                  </a>
+                </span>
+              <span class="link-block">
+                    <a href="https://huggingface.co/datasets/marinero4972/Open-o3-Video/tree/main" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span>🤗 HuggingFace Data</span>
+                  </a>
+                </span>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Introduction Video -->
+<section class="hero is-small" style="margin-top: -20px; margin-bottom: 10px;">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-three-fifths">
+      <div class="publication-video">
+        <iframe width="276" height="256" src="youtu.be/gymaTVRy0JY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Introduction Video -->
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <img src="./src/teaser.png" alt="empty">
+        <p>
+           Open-o3 Video integrates explicit spatio-temporal evidence into video reasoning through curated STGR datasets and a two-stage SFT–RL training strategy, achieving state-of-the-art results on V-STAR and delivering verifiable, reliable reasoning for video understanding.
+        </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Abstract. -->
+<section class="hero is-light">
+  <div class="container is-max-desktop ">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="margin-top: 20px">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Most video reasoning models only generate textual reasoning traces without indicating when and where key evidence appears. Recent models such as OpenAI-o3 have sparked wide interest in evidence-centered reasoning for images, yet extending this ability to videos is more challenging, as it requires joint temporal tracking and spatial localization across dynamic scenes. We introduce Open-o3 Video, a non-agent framework that integrates explicit spatio-temporal evidence into video reasoning, and carefully collect training data and design training strategies to address the aforementioned challenges. The model highlights key timestamps, objects, and bounding boxes alongside its answers, allowing reasoning to be grounded in concrete visual observations. To enable this functionality, we first curate and build two high-quality datasets, STGR-CoT-30k for SFT and STGR-RL-36k for RL, with carefully constructed temporal and spatial annotations, since most existing datasets offer either temporal spans for videos or spatial boxes on images, lacking unified spatio-temporal supervision and reasoning traces. Then, we adopt a cold-start reinforcement learning strategy with multiple specially designed rewards that jointly encourage answer accuracy, temporal alignment, and spatial precision. On V-STAR benchmark, Open-o3 Video achieves state-of-the-art performance, raising mAM by 14.4% and mLGM by 24.2% on the Qwen2.5-VL baseline. Consistent improvements are also observed on a broad range of video understanding benchmarks, including VideoMME, WorldSense, VideoMMMU, and TVGBench. Beyond accuracy, the reasoning traces produced by Open-o3 Video also provide valuable signals for test-time scaling, enabling confidence-aware verification and improving answer reliability.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-1">Demos</h2>
+        <div class="content has-text-justified">
+          
+          <div class="hero-body">
+            <p>
+              (Demo 1) Input Video (Source: La La Land, 2016):
+            </p>
+            <video poster autoplay loop muted playsinline>
+                <source src="video/exp_1.mp4" type="video/mp4">
+                Error: Your browser does not support the video tag.
+            </video>
+            
+            <p>
+              Instruction: "Please segment the girl wearing the yellow dress."
+            </p>
+          </div>
+
+          <div class="hero-body">
+            <p>
+              (Demo 2) Input Video (Source: La La Land, 2016):
+            </p>
+            <video autoplay loop muted>
+                <source src="video/exp_2.mp4" type="video/mp4">
+                Error: Your browser does not support the video tag.
+            </video>
+            <p>
+              Instruction: "Please segment the main character."
+            </p>
+          </div>
+          
+          <div class="hero-body">
+            <p>
+              (Demo 3) Input Video (Source: Internet):
+            </p>
+            <video autoplay loop muted>
+                <source src="video/apt_exp_1_all.mp4" type="video/mp4">
+                Error: Your browser does not support the video tag.
+            </video>
+            <p>
+              Instruction: "Please segment the person wearing sun glasses."
+            </p>
+          </div>
+
+          <div class="hero-body">
+            <p>
+              (Demo 4) Input Video (Source: Internet):
+            </p>
+            <video autoplay loop muted>
+                <source src="video/apt_exp_2_all.mp4" type="video/mp4">
+                Error: Your browser does not support the video tag.
+            </video>
+            <p>
+              Instruction: "Please segment the singing girl."
+            </p>
+          </div>
+
+          <div class="hero-body">
+            <p>
+              (Demo 5) Input Video (Source: Internet):
+            </p>
+            <video autoplay loop muted>
+                <source src="video/baodao_exp_1_all.mp4" type="video/mp4">
+                Error: Your browser does not support the video tag.
+            </video>
+            <p>
+              Instruction: "Please segment the guy in the center."
+            </p>
+          </div>
+
+          <div class="hero-body">
+            <p>
+              (Demo 6) Input Video (Source: The Godfather, 1972):
+            </p>
+            <video autoplay loop muted>
+                <source src="video/gf_exp1.mp4" type="video/mp4">
+                Error: Your browser does not support the video tag.
+            </video>
+            <p>
+              Instruction: "What is the atmosphere of the scene?"
+            </p>
+            <p>
+              Answer: "The scene has a dark and mysterious atmosphere, with the men dressed in suits and ties, and the dimly lit room."
+          </div>
+
+          <div class="hero-body">
+            <p>
+              (Demo 7) Input Video (Source: Internet):
+            </p>
+            <video autoplay loop muted>
+                <source src="video/exp_baodao_1.mp4" type="video/mp4">
+                Error: Your browser does not support the video tag.
+            </video>
+            <p>
+              Instruction: "What are the guys doing in the video?"
+            </p>
+            <p>
+              Answer: "The guys in the video are dancing together in a group. They are performing a choreographed routine, moving in sync with each other."
+          </div>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+<!-- Method. -->
+<section class="section" style="margin-top:-50px; margin-bottom:-50px;">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <div class="columns is-centered has-text-centered">
+            <div class="column">
+                <h2 class="title is-3 is-centered">Model Training</h2>
+                <div class="publication-img">
+                  <img id="architecture" src="./src/model.png" style="width:1000px; margin-top:10px;margin-bottom:10px;"/>
+                </div>
+            </div>
+            </div>
+            <p>Stage 1: Cold-start initialization on STGR-CoT-30k equips the model with basic grounded reasoning.</p>
+            <p>Stage 2: Reinforcement learning with Group Sequence Policy Optimization stabilizes long-horizon optimization. We propose adaptive temporal proximity and temporal gating in the thinking reward design.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- TTS -->
+<section class="setting teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Inference Time Scaling</h2>
+        <div class="content has-text-justified">
+    <div class="hero-body">
+        <img src="./src/tts.png" alt="empty">
+        <p>
+          Figure: The explicit evidence traces can support evidence-aware test-time scaling. At inference, we generate N responses. Each response contains spatio-temporal traces. We crop those regions and recheck their relevance to the question. And the final prediction uses confidence-weighted voting according to the feedback score. This confidence-aware scaling reduces hallucination and improves robustness compared to simple majority voting.
+        </p>
+    </div>
+  </div>
+      </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- Experiments Results -->
+<section class="setting teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experiment Results: On V-STAR Benchmark</h2>
+        <div class="content has-text-justified">
+    <div class="hero-body">
+        <img src="./src/vstar.png" alt="empty">
+        <p>
+          Figure: Performance on the V-STAR benchmark, which evaluates spatio-temporal reasoning across three dimensions. Chain1 denotes what-when-where, while Chain2 corresponds to what-where-when. mAM is the average of arithmetic mean, and mLGM is the average of modified logarithmic geometric mean, combining temporal and spatial alignment. Open-o3 Video sets a new state-of-the-art with mAM improved by +14.4% and mLGM by +24.2%, surpassing GPT-4o and Gemini-2-Flash. These results demonstrate that our approach brings significant advances in temporal and spatial grounding.
+        </p>
+    </div>
+  </div>
+      </div>
+      </div>
+  </div>
+</section>
+
+
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{sa2va,
+  title={Sa2VA: Marrying SAM2 with LLaVA for Dense Grounded Understanding of Images and Videos},
+  author={Yuan, Haobo and Li, Xiangtai and Zhang, Tao and Huang, Zilong and Xu, Shilin and Ji, Shunping and Tong, Yunhai and Qi, Lu and Feng, Jiashi and Yang, Ming-Hsuan},
+  journal={arXiv},
+  year={2025}
+}</code></pre>
+  </div>
+</section> -->
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Thanks for the project template by  <a href="https://github.com/nerfies/nerfies.github.io"> Nerfies Project</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
