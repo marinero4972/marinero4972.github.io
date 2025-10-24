@@ -97,7 +97,7 @@
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Peking University</span> &nbsp;&nbsp;&nbsp;
+            <span class="author-block"><sup>1</sup>PKU</span> &nbsp;&nbsp;&nbsp;
             <span class="author-block"><sup>2</sup>ByteDance</span>&nbsp;&nbsp;&nbsp;
             <span class="author-block"><sup>3</sup>CASIA</span>&nbsp;&nbsp;&nbsp;
             <span class="author-block"><sup>4</sup>WHU</span>&nbsp;&nbsp;&nbsp;
@@ -106,7 +106,7 @@
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
+              <!-- Paper Link. -->
               <span class="link-block">
                 <a href="https://arxiv.org/abs/2510.20579"
                    class="external-link button is-normal is-rounded is-dark">
@@ -116,6 +116,12 @@
                   <span>arXiv</span>
                 </a>
               </span>
+              <span class="link-block">
+                    <a href="https://huggingface.co/papers/2510.20579"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span>🤗 Paper</span>
+                  </a>
+                </span>
               <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://github.com/marinero4972/Open-o3-Video"
@@ -130,13 +136,13 @@
               <span class="link-block">
                     <a href="https://huggingface.co/marinero4972/Open-o3-Video/tree/main" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
-                    <span>🤗 HuggingFace Model</span>
+                    <span>🤗 Model</span>
                   </a>
                 </span>
               <span class="link-block">
                     <a href="https://huggingface.co/datasets/marinero4972/Open-o3-Video/tree/main" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
-                    <span>🤗 HuggingFace Data</span>
+                    <span>🤗 Data</span>
                   </a>
                 </span>
 
@@ -169,7 +175,7 @@
     <div class="hero-body">
         <img src="./src/teaser.png" alt="empty">
         <p>
-           <b>TL;DR: </b>Open-o3 Video integrates explicit spatio-temporal evidence into video reasoning through curated STGR datasets and a two-stage SFT–RL training strategy, achieving state-of-the-art results on V-STAR and delivering verifiable, reliable reasoning for video understanding.
+           <b>TL;DR: </b>Open-o3 Video integrates explicit spatio-temporal evidence (key timestamps and bounding boxes) into video reasoning through curated STGR dataset and a two-stage SFT-RL training strategy, achieving state-of-the-art results on V-STAR and delivering verifiable, reliable reasoning for video understanding.
         </p>
     </div>
   </div>
@@ -230,25 +236,6 @@
         </div>
       </div>
     </div>
-    
-
-    <!-- ====== Demo 3 ====== -->
-    <div class="demo-box mb-6">
-      <div class="columns is-vcentered">
-        <div class="column is-6">
-          <div class="demo-media">
-            <video src="./src/3846475848.mp4" muted autoplay loop playsinline controls></video>
-          </div>
-          <div class="demo-caption has-text-centered">Input video</div>
-        </div>
-        <div class="column is-6">
-          <div class="demo-media">
-            <img src="./src/demo_vstar_3846475848.gif" alt="Demo 3 visualization">
-          </div>
-          <div class="demo-caption has-text-centered">Spatio-temporal Grounded Reasoning (GIF)</div>
-        </div>
-      </div>
-    </div>
 
     <!-- ====== Demo 4 ====== -->
     <div class="demo-box mb-6">
@@ -280,6 +267,24 @@
         <div class="column is-6">
           <div class="demo-media">
             <img src="./src/demo_vstar_5804131706.gif" alt="Demo 5 visualization">
+          </div>
+          <div class="demo-caption has-text-centered">Spatio-temporal Grounded Reasoning (GIF)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== Demo 3 ====== -->
+    <div class="demo-box mb-6">
+      <div class="columns is-vcentered">
+        <div class="column is-6">
+          <div class="demo-media">
+            <video src="./src/3846475848.mp4" muted autoplay loop playsinline controls></video>
+          </div>
+          <div class="demo-caption has-text-centered">Input video</div>
+        </div>
+        <div class="column is-6">
+          <div class="demo-media">
+            <img src="./src/demo_vstar_3846475848.gif" alt="Demo 3 visualization">
           </div>
           <div class="demo-caption has-text-centered">Spatio-temporal Grounded Reasoning (GIF)</div>
         </div>
@@ -338,8 +343,8 @@
                 </div>
             </div>
             </div>
-            <p>Stage 1: Cold-start initialization on STGR-CoT-30k equips the model with basic grounded reasoning.</p>
-            <p>Stage 2: Reinforcement learning with Group Sequence Policy Optimization stabilizes long-horizon optimization. We propose adaptive temporal proximity and temporal gating in the thinking reward design.</p>
+            <p><strong>Stage 1:</strong> Cold-start initialization on STGR-CoT-30k equips the model with basic grounded reasoning.</p>
+            <p><strong>Stage 2:</strong> Reinforcement learning with Group Sequence Policy Optimization stabilizes long-horizon optimization. We propose <strong>adaptive temporal proximity</strong> and <strong>temporal gating</strong> in the thinking reward design.</p>
         </div>
     </div>
 </section>
