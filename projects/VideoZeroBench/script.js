@@ -1,6 +1,6 @@
 const SITE_CONFIG = {
   links: {
-    paper: "https://arxiv.org/pdf/2604.xxxxx",
+    paper: "https://arxiv.org/pdf/2604.01569",
     dataset: "https://huggingface.co/datasets/marinero4972/VideoZeroBench",
     code: "https://github.com/marinero4972/VideoZeroBench",
   },
@@ -10,7 +10,7 @@ const SITE_CONFIG = {
     { name: "Yue Tan", affiliations: [1], link: "https://tangent0308.github.io/" },
     { name: "Qi Xu", affiliations: [2], link: "https://xuqi.space/about" },
     { name: "Haochen Wang", affiliations: [3], link: "https://haochen-wang409.github.io/" },
-    { name: "Zhongwei Ren", affiliations: [4], link: "https://scholar.google.com/citations?user=e5TJm-0AAAAJ&hl=zh-CN" },
+    { name: "Zhongwei Ren", affiliations: [4], link: "https://maverickren.github.io/MyProfile.github.io/" },
     { name: "Weisong Liu", affiliations: [3], link: "https://openreview.net/profile?id=~Weisong_Liu3" },
     { name: "Yuhao Wang", affiliations: [1], link: "https://scholar.google.com/citations?user=aIX6QCQAAAAJ&hl=zh-CN" },
     { name: "Renrui Zhang", affiliations: [5], link: "https://zrrskywalker.github.io/" },
