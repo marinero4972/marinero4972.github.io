@@ -42,7 +42,7 @@ const SITE_CONFIG = {
   citation: `@article{meng2026videozero,
   title={VideoZeroBench: Probing the Limits of Video MLLMs with Spatio-Temporal Evidence Verification},
   author={Meng, Jiahao and Tan, Yue and Xu, Qi and Wang, Haochen and Ren, Zhongwei and Liu, Weisong and Wang, Yuhao and Zhang, Renrui and Duan, Haodong and Tong, Yunhai},
-  journal={arXiv preprint arXiv:2604.XXXXX},
+  journal={arXiv preprint arXiv:2604.01569},
   year={2026}
 }`,
 };
