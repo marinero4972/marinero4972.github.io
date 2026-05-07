@@ -123,7 +123,7 @@
         <div class="container">
           <figure class="paper-figure spotlight-card reveal">
             <img
-              src="images/teaser.png"
+              src="images/teaser.jpg"
               alt="VideoZeroBench teaser illustration"
               loading="eager"
             />
@@ -157,29 +157,31 @@
               supporting their predictions.
             </p>
             <p>
-              To address this, we present <strong>VideoZeroBench</strong>, a
-              hierarchical benchmark designed for challenging long-video
-              question answering that rigorously verifies spatio-temporal
-              evidence. It comprises 500 manually annotated questions across 13
-              domains, paired with temporal intervals and spatial bounding boxes
-              as evidence.
+              To address this, we present <strong>VideoZeroBench</strong>, the
+              first hierarchical benchmark designed for challenging question
+              answering that rigorously verifies spatio-temporal evidence. To
+              disentangle evidence utilization and sub-tasks, including standard
+              question answering, temporal grounding, and spatial grounding, we
+              introduce a <strong>five-level evaluation protocol</strong> that
+              progressively tightens evidence requirements.
             </p>
             <p>
-              To disentangle answer generation, temporal grounding, and spatial
-              grounding, we introduce a <strong>five-level evaluation protocol</strong> 
-              that progressively tightens evidence requirements. Experiments show that
-              even Gemini-3-Pro correctly answers fewer than 17% of questions
-              under the standard end-to-end QA setting (Level-3).
+              Overall, VideoZeroBench contains 2,314 queries across the five
+              levels, spanning 13 domains and paired with temporal intervals and
+              spatial bounding boxes as annotations. All annotations are
+              performed by PhD-level annotators with rigorous quality control.
+              Experiments show that even Gemini-3-Pro correctly answers fewer
+              than 17% of questions under the standard end-to-end QA setting
+              (Level-3).
             </p>
             <p>
               When grounding constraints are imposed, performance drops sharply:
               no model exceeds 1% accuracy when both correct answering and
-              accurate spatio-temporal localization are required (Level-5), with
-              most failing to achieve any correct grounded predictions. These
-              results expose a significant gap between surface-level answer
-              correctness and genuine evidence-based reasoning, revealing that
-              grounded video understanding remains a bottleneck for long-video
-              QA.
+              accurate spatio-temporal localization are required (Level-5).
+              These results expose a significant gap between surface-level
+              answer correctness and genuine evidence-based reasoning, revealing
+              that grounded video understanding remains a bottleneck for
+              long-video QA.
             </p>
             <p>
               We further analyze performance across minimal evidence spans,
@@ -228,11 +230,12 @@
             </article>
 
             <article class="feature-card spotlight-card reveal">
-              <p class="feature-tag">Scale</p>
+              <p class="feature-tag">Annotation</p>
               <h3>High-Quality Manual Annotation</h3>
               <p>
-                500 questions with human-verified temporal intervals and spatial
-                boxes across 13 real-world domains.
+                PhD-level annotators create both question-answer pairs and
+                spatio-temporal evidence annotations under rigorous quality
+                control.
               </p>
             </article>
 
@@ -264,7 +267,7 @@
           </div>
           <figure class="paper-figure spotlight-card reveal">
             <img
-              src="images/statistics.png"
+              src="images/statistics.jpg"
               alt="Data construction and statistics of VideoZeroBench"
               loading="lazy"
             />
@@ -299,7 +302,8 @@
               maximum frame limit. The blue column (Level-3) reports standard QA
               accuracy, while the red column (Level-5) reports accuracy
               requiring both correct answers and spatio-temporal grounding.
-              "tiou" means temporal IoU and "viou" means visual IoU.
+              "tiou" means temporal IoU and "viou" means visual IoU. 
+              Human performance is reported on a randomly sampled 50-example Level-3 subset.
             </figcaption>
           </figure>
         </div>
