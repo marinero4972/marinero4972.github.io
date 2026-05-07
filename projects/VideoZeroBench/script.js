@@ -13,9 +13,11 @@ const SITE_CONFIG = {
     { name: "Zhongwei Ren", affiliations: [4], link: "https://maverickren.github.io/MyProfile.github.io/" },
     { name: "Weisong Liu", affiliations: [3], link: "https://openreview.net/profile?id=~Weisong_Liu3" },
     { name: "Yuhao Wang", affiliations: [1], link: "https://scholar.google.com/citations?user=aIX6QCQAAAAJ&hl=zh-CN" },
+    { name: "Xiangtai Li", affiliations: [1], link: "https://scholar.google.com/citations?user=FL3ReD0AAAAJ&hl=zh-CN&oi=ao" },
     { name: "Renrui Zhang", affiliations: [5], link: "https://zrrskywalker.github.io/" },
     { name: "Haodong Duan", affiliations: [5], link: "https://kennymckormick.github.io/" },
     { name: "Yunhai Tong", affiliations: [1], suffix: "†", link: "https://scholar.google.com/citations?user=T4gqdPkAAAAJ" },
+    { name: "Ming-Hsuan Yang", affiliations: [6], link: "https://scholar.google.com/citations?user=p9-ohHsAAAAJ&hl=zh-CN&oi=ao" },
   ],
   affiliations: [
     "1. PKU",
@@ -23,6 +25,7 @@ const SITE_CONFIG = {
     "3. CASIA",
     "4. BJTU",
     "5. CUHK",
+    "6. UC Merced"
   ],
   examples: [
     { label: "Instructional", src: "images/course.png" },
