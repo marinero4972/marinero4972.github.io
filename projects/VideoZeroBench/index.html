@@ -123,15 +123,15 @@
         <div class="container">
           <figure class="paper-figure spotlight-card reveal">
             <img
-              src="images/teaser.jpg"
+              src="images/teaser_new.png"
               alt="VideoZeroBench teaser illustration"
               loading="eager"
             />
             <figcaption>
               We introduce VideoZeroBench, a challenging long-video
               understanding benchmark with hierarchical spatio-temporal evidence
-              verification. Frontier models achieve only 17% accuracy in
-              standard video QA and no more than 1% when correct
+              verification. The best model reaches 24.8% accuracy in
+              standard video QA and only 1.8% when correct
               spatio-temporal grounding is required.
               <strong class="teaser-emphasis">Most
               open-source video MLLMs obtain zero accuracy at
@@ -148,45 +148,34 @@
           </div>
           <article class="text-card spotlight-card reveal">
             <p>
-              Recent video multimodal large language models achieve impressive
-              results across various benchmarks. However, current evaluations
-              suffer from two critical limitations: (1) <strong>inflated scores</strong> 
-              can mask deficiencies in fine-grained visual understanding and reasoning, 
-              and (2) answer correctness is often measured <strong>without verifying 
-              whether models identify the precise spatio-temporal evidence</strong> 
-              supporting their predictions.
+              Video multimodal large language models achieve strong results on
+              existing benchmarks, but answer accuracy alone does not establish
+              whether they can locate the evidence needed to answer a question.
+              We introduce <strong>VideoZeroBench</strong>, a challenging long-video
+              benchmark with manually annotated question–answer pairs spanning
+              13 video domains. Questions target fine-grained cues, fleeting
+              events, and evidence distributed across multiple segments.
+              Temporal intervals and key-frame boxes are annotated where applicable.
             </p>
             <p>
-              To address this, we present <strong>VideoZeroBench</strong>, the
-              first hierarchical benchmark designed for challenging question
-              answering that rigorously verifies spatio-temporal evidence. To
-              disentangle evidence utilization and sub-tasks, including standard
-              question answering, temporal grounding, and spatial grounding, we
-              introduce a <strong>five-level evaluation protocol</strong> that
-              progressively tightens evidence requirements.
+              All questions undergo two rounds of cross-verification for answer
+              validity and evidence quality. Our <strong>five-level diagnostic
+              protocol</strong> compares answering with and without evidence hints,
+              then combines answer correctness with independently evaluated
+              temporal and spatial grounding.
             </p>
             <p>
-              Overall, VideoZeroBench contains 2,314 queries across the five
-              levels, spanning 13 domains and paired with temporal intervals and
-              spatial bounding boxes as annotations. All annotations are
-              performed by PhD-level annotators with rigorous quality control.
-              Experiments show that even Gemini-3-Pro correctly answers fewer
-              than 17% of questions under the standard end-to-end QA setting
-              (Level-3).
+              Across 19 evaluated models, the best standard QA accuracy is 24.8%
+              (Level-3), achieved by Gemini-3.7-Flash. No model exceeds 1.8%
+              when correct answers and accurate spatio-temporal localization are
+              jointly required (Level-5).
             </p>
             <p>
-              When grounding constraints are imposed, performance drops sharply:
-              no model exceeds 1% accuracy when both correct answering and
-              accurate spatio-temporal localization are required (Level-5).
-              These results expose a significant gap between surface-level
-              answer correctness and genuine evidence-based reasoning, revealing
-              that grounded video understanding remains a bottleneck for
-              long-video QA.
-            </p>
-            <p>
-              We further analyze performance across minimal evidence spans,
-              atomic abilities, and inference paradigms, providing insights for
-              future research in grounded video reasoning.
+              Analyses of atomic abilities, evidence spans, input modalities,
+              and thinking-with-videos inference further characterize where the
+              evaluated systems struggle. These findings motivate more precise
+              evidence search and localization for long-video question answering.
+              Our code and data are publicly released.
             </p>
           </article>
         </div>
@@ -292,18 +281,19 @@
           </div>
           <figure class="paper-figure spotlight-card reveal">
             <img
-              src="images/leaderboard.png"
+              src="images/leaderboard_new.png"
               alt="Leaderboard results for VideoZeroBench"
               loading="lazy"
             />
             <figcaption>
               Benchmark results on VideoZeroBench under the five-level
-              evaluation protocol. "Frames" indicates the sampling strategy and
-              maximum frame limit. The blue column (Level-3) reports standard QA
-              accuracy, while the red column (Level-5) reports accuracy
-              requiring both correct answers and spatio-temporal grounding.
-              "tiou" means temporal IoU and "viou" means visual IoU. 
-              Human performance is reported on a randomly sampled 50-example Level-3 subset.
+              evaluation protocol. All model accuracies use the same 500 questions.
+              "Frames" indicates the sampling strategy and frame limit. The blue
+              Level-3 column reports standard QA accuracy, while the red Level-5
+              column requires correct answers and accurate spatio-temporal grounding.
+              tIoU and vIoU are averaged over the 442 temporal and 372 spatially
+              annotated questions, respectively. Human scores use a randomly sampled
+              50-question subset.
             </figcaption>
           </figure>
         </div>
@@ -318,19 +308,16 @@
             <article class="analysis-item">
               <span class="analysis-index">01</span>
               <p>
-                Answer correctness may not reliably imply <strong>genuine
-                understanding</strong>.
-                Evidence grounding frequently fails even when predictions are
-                correct.
+                Models may answer challenging questions correctly yet fail to
+                localize the <strong>supporting spatio-temporal evidence</strong>.
               </p>
             </article>
 
             <article class="analysis-item">
               <span class="analysis-index">02</span>
               <p>
-                The primary bottleneck is not coarse semantic recognition.
-                It lies in <strong>fine-grained spatial intelligence and
-                needle-in-a-haystack temporal search.</strong>
+                <strong>Fine-grained spatial perception</strong> and temporal
+                evidence search remain challenging.
               </p>
             </article>
 
